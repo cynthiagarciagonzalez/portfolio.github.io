@@ -1,23 +1,23 @@
 # CynthiaDevelop.github.io
-👩‍💻 Welcome to my coding universe! I'm CynthiaDevelop, an AI enthusiast and passionate data explorer.
+👩‍💻 Welcome to my coding universe! I'm Cynthia García, an Back-End Developer, AI enthusiast and passionate data explorer.
 
 ## About Me
 - AI Alchemist crafting innovative solutions in Big Data.
-- Fluent in Python, Java, SQL, and cloud platforms like AWS and Azure.
+- Fluent in Python, Java, Eclipse, Spring Boot, SQL, and cloud platforms like AWS and Azure.
 
 ## Projects
-- QuantumCynthia: Exploring the quantum leap of AI's possibilities.
-- DataSculptor: Crafting compelling stories through data visualization.
+- CynthIA: Exploring the quantum leap of AI's possibilities.
+- BackSculptor: Developing in the backend of applications.
 
 ## Skills
 - AI & Machine Learning
 - Data Analysis & Visualization
 - Cloud Computing (AWS, Azure)
-- Programming (Python, Java)
+- Backend Dev (Java, Eclipse, Spring Boot)
 - Database Management (SQL, MongoDB)
 
 ## Let's Connect!
-- [LinkedIn](https://www.linkedin.com/in/CynthiaDevelop)
+- [LinkedIn](https://www.linkedin.com/in/cynthiagarciagonzalez)
 
 Feel free to explore, and let's connect to discuss the boundless possibilities of technology!
 
