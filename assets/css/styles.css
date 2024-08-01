@@ -325,7 +325,7 @@ img {
   transform: scale(1.1);
 }
 
-.work__overlay {
+/* .work__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -352,6 +352,40 @@ img {
 }
 
 .work__img img:hover {
+  transform: scale(1.1);
+} */
+
+.work__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.work__title {
+  font-size: var(--h2-font-size);
+  color: #000;
+  text-align: center;
+}
+
+.work__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.work__img img {
+  filter: blur(2px);
+  transition: 1s;
+}
+
+.work__img:hover img {
+  filter: blur(0px);
   transform: scale(1.1);
 }
 
