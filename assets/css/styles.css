@@ -249,6 +249,9 @@ img {
   width: 200px;
   border-radius: 0.5rem;
 }
+.about__text {
+  line-height: 1.6;
+}
 
 /* ===== SKILLS =====*/
 .skills__container {
