@@ -79,17 +79,17 @@ form.addEventListener('submit', (e) => {
     body: new URLSearchParams(formData).toString()
   })
   .then((response) => {
-    if (response.ok) {
-      alert(`Gracias ${name}, tu mensaje ha sido enviado.`);
-      form.reset();
+    if (response.Error) {
+        throw new Error('Error al enviar el formulario.');
     } else {
-      throw new Error('Error al enviar el formulario.');
+        alert(`Gracias ${name}, tu mensaje ha sido enviado.`);
+        form.reset();
     }
   })
-    .catch((error) => {
-    console.error(error);
-    alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
-   });
+  .catch((error) => {
+  console.error(error);
+  alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
+  });
 });
 
 // Recuperar los datos de LocalStorage cuando se carga la página
