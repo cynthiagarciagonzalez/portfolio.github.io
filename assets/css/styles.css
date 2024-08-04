@@ -1,12 +1,11 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
@@ -14,8 +13,8 @@
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size:.938rem;
+  --smaller-font-size:.75rem;
   /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -25,12 +24,13 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size:.875rem;
   }
 }
 
@@ -70,7 +70,7 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+/*===== CLASS CSS =====*/
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -79,6 +79,7 @@ img {
   margin-bottom: var(--mb-4);
   text-align: center;
 }
+
 .section-title::after {
   position: absolute;
   content: "";
@@ -122,28 +123,20 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
-    transition: 0.5s;
-  }
-}
+
 .nav__item {
   margin-bottom: var(--mb-4);
 }
+
 .nav__link {
   position: relative;
   color: #fff;
 }
+
 .nav__link:hover {
   position: relative;
 }
+
 .nav__link:hover::after {
   position: absolute;
   content: "";
@@ -153,16 +146,18 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 .nav__logo {
   color: var(--second-color);
 }
+
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-/*Active menu*/
+/*=== ACTIVE MENU ===*/
 .active-link::after {
   position: absolute;
   content: "";
@@ -173,7 +168,7 @@ img {
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
+/*=== SHOW MENU ===*/
 .show {
   right: 0;
 }
@@ -184,38 +179,47 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
+
 .home__data {
   align-self: center;
 }
+
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
+
 .home__title-color {
   color: var(--first-color);
 }
+
 .home__social {
   display: flex;
   flex-direction: column;
 }
+
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
 }
+
 .home__social-icon:hover {
   color: var(--first-color);
 }
+
 .home__img {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 260px;
 }
+
 .home__blob {
   fill: var(--first-color);
 }
+
 .home__blob-img {
   width: 360px;
 }
@@ -230,6 +234,7 @@ img {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
+
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
@@ -239,16 +244,20 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
+
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 .about__img {
   justify-self: center;
 }
+
 .about__img img {
   width: 200px;
   border-radius: 0.5rem;
 }
+
 .about__text {
   line-height: 1.6;
 }
@@ -258,12 +267,15 @@ img {
   row-gap: 2rem;
   text-align: center;
 }
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 .skills__text {
   margin-bottom: var(--mb-4);
 }
+
 .skills__data {
   display: flex;
   justify-content: space-between;
@@ -275,15 +287,18 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
+
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
+
 .skills__names {
   display: flex;
   align-items: center;
 }
+
 .skills__bar {
   position: absolute;
   left: 0;
@@ -293,38 +308,69 @@ img {
   border-radius: 0.5rem;
   z-index: var(--z-back);
 }
-.skills__java {
-  width: 90%;
-}
-.skills__springboot {
-  width: 75%;
-}
+
 .skills__python {
   width: 70%;
 }
-.skills__html {
-  width: 65%;
+
+.skills__tensorflow__pytorch {
+  width: 70%;
 }
-.skills__css {
-    width: 65%;
-  }
+
+.skills__git {
+  width: 80%;
+}
+
+.skills__java__springboot {
+  width: 85%;
+}
+
 .skills__img {
   border-radius: 0.5rem;
 }
 
 /* ===== WORK =====*/
 .work__container {
-  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.work__category {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.work__category--back-end {
+  margin-top: 50px; 
+}
+
+.work__subtitle {
+  margin-left: 10px;
+}
+
+.work__links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
+  position: relative;
   overflow: hidden;
+  margin: 10px;
 }
-.work__img img {
+
+.work__img-container {
+  position: relative;
   transition: 1s;
 }
-.work__img img:hover {
+
+.work__img-container:hover {
   transform: scale(1.1);
 }
 
@@ -338,28 +384,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
 .work__title {
   font-size: var(--h2-font-size);
   color: #ffffff;
   text-align: center;
-}
-
-.work__img {
   position: relative;
-  overflow: hidden;
-}
-
-.work__img img {
-  filter: blur(2px);
-  transition: 1s;
-}
-
-.work__img:hover img {
-  filter: blur(0px);
-  transform: scale(1.1);
+  z-index: 1;
 }
 
 /* ===== CONTACT =====*/
@@ -373,6 +405,7 @@ img {
   outline: none;
   margin-bottom: var(--mb-4);
 }
+
 .contact__button {
   display: block;
   border: none;
@@ -390,18 +423,22 @@ img {
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
+
 .footer__title {
   font-size: 2rem;
   margin-bottom: var(--mb-4);
 }
+
 .footer__social {
   margin-bottom: var(--mb-4);
 }
+
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2);
 }
+
 .footer__copy {
   font-size: var(--smaller-font-size);
 }
@@ -415,6 +452,7 @@ img {
     width: 200px;
   }
 }
+
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
@@ -463,9 +501,6 @@ img {
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
-  }
-  .section-title {
-    margin-bottom: var(--mb-6);
   }
   .section-title::after {
     width: 80px;
