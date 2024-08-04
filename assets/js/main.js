@@ -79,11 +79,11 @@ form.addEventListener('submit', (e) => {
     body: new URLSearchParams(formData).toString()
   })
   .then((response) => {
-    if (response.Error) {
-        throw new Error('Error al enviar el formulario.');
+    if (!response.ok) {
+      alert(`Gracias ${name}, tu mensaje ha sido enviado.`);
+      form.reset();
     } else {
-        alert(`Gracias ${name}, tu mensaje ha sido enviado.`);
-        form.reset();
+      throw new Error('Error al enviar el formulario.');
     }
   })
   .catch((error) => {
