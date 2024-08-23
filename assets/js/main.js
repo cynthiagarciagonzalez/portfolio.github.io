@@ -1,15 +1,35 @@
 /*===== MENU SHOW =====*/ 
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+document.addEventListener("DOMContentLoaded", function() {
+    const navMenu = document.querySelector(".nav__menu");
+    const navToggle = document.querySelector(".nav__toggle");
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
+    // Mostrar/Ocultar menú al hacer clic en el botón
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+
+    // Cerrar el menú al hacer clic fuera de él
+    document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navMenu.classList.remove("show");
+        }
+    });
+
+    // Cerrar el menú al cambiar el tamaño de la pantalla si es pequeña
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 549) {
+        navMenu.classList.remove("show");
+        }
+    });
+});
 showMenu('nav-toggle','nav-menu')
+
+// Cerrar el menú al hacer clic fuera de él
+document.addEventListener("click", (e) => {
+if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+    navMenu.classList.remove("show");
+}
+});
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
